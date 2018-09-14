@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>App.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">pa-app</a> &gt; <a href="index.source.html" class="el_package">pa.app</a> &gt; <span class="el_source">App.java</span></div><h1>App.java</h1><pre class="source lang-java linenums">package pa.app;
+
+import java.util.Scanner;
+
+public class App {
+	
+	int a;
+	int b;
+	
+<span class="fc" id="L10">	public App(int a, int b){</span>
+<span class="fc" id="L11">		this.a=a;</span>
+<span class="fc" id="L12">		this.b=b;</span>
+<span class="fc" id="L13">	}</span>
+	
+	public static void main(String[] args) {
+<span class="nc" id="L16">		System.out.println(&quot;Enter first and second number:&quot;);</span>
+<span class="nc" id="L17">		Scanner inp = new Scanner(System.in);</span>
+		int num1, num2;
+<span class="nc" id="L19">		num1 = inp.nextInt();</span>
+<span class="nc" id="L20">		num2 = inp.nextInt();</span>
+		int ans;
+<span class="nc" id="L22">		System.out.println(</span>
+				&quot;Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:&quot;);
+		int choose;
+<span class="nc" id="L25">		choose = inp.nextInt();</span>
+<span class="nc bnc" id="L26" title="All 5 branches missed.">		switch (choose) {</span>
+		case 1:
+<span class="nc" id="L28">			System.out.println(add(num1, num2));</span>
+<span class="nc" id="L29">			break;</span>
+		case 2:
+<span class="nc" id="L31">			System.out.println(sub(num1, num2));</span>
+<span class="nc" id="L32">			break;</span>
+		case 3:
+<span class="nc" id="L34">			System.out.println(mult(num1, num2));</span>
+<span class="nc" id="L35">			break;</span>
+		case 4:
+<span class="nc" id="L37">			System.out.println(div(num1, num2));</span>
+<span class="nc" id="L38">			break;</span>
+		default:
+<span class="nc" id="L40">			System.out.println(&quot;Illigal Operation&quot;);</span>
+
+		}
+
+<span class="nc" id="L44">	}</span>
+
+	public static int add(int x, int y) {
+<span class="fc" id="L47">		int result = x + y;</span>
+<span class="fc" id="L48">		return result;</span>
+	}
+
+	public static int sub(int x, int y) {
+<span class="fc" id="L52">		int result = x - y;</span>
+<span class="fc" id="L53">		return result;</span>
+	}
+
+	public static int mult(int x, int y) {
+<span class="fc" id="L57">		int result = x * y;</span>
+<span class="fc" id="L58">		return result;</span>
+	}
+
+	public static int div(int x, int y) {
+<span class="fc" id="L62">		int result = x / y;</span>
+<span class="fc" id="L63">		return result;</span>
+	}
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>

@@ -1,9 +1,17 @@
 package pa.app;
 
-import java.util.*;
 import java.util.Scanner;
 
 public class App {
+	
+	int a;
+	int b;
+	
+	public App(int a, int b){
+		this.a=a;
+		this.b=b;
+	}
+	
 	public static void main(String[] args) {
 		System.out.println("Enter first and second number:");
 		Scanner inp = new Scanner(System.in);
